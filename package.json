@@ -14,15 +14,13 @@
     "index.js"
   ],
   "engines": {
-    "node": ">=0.10.0"
-  },
-  "scripts": {
-    "test": "mocha"
+    "node": ">=6"
   },
   "keywords": [
-    "generategenerator"
-  ],
-  "dependencies": {
-    "tape": "^4.6.2"
-  }
+    "cli",
+    "confirmation",
+    "question",
+    "ask",
+    "confirm"
+  ]
 }
