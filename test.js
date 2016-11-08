@@ -1,8 +1,16 @@
-var confirm = require('.');
+const test = require('tape')
+const confirm = require('.')
 
-confirm('Do you want to delete all the files on your computer?', [
-  { option: 'y', aliases: ['yes'] },
-  { option: 'n', aliases: ['no'] }
-], answer => {
-  console.log(answer)
+test('test option', t => {
+  t.plan(1)
+
+  confirm('do you like this module?', [
+    { option: 'y' },
+    { option: 'n' }
+  ], answer => {
+    t.equal(answer.y, true)
+  })
+
+  process.stdout.write('y')
+
 })

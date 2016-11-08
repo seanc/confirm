@@ -5,7 +5,7 @@
 ## Installation
 
 ```sh
-$ npm install --save confirm
+$ npm install --save seanc/confirm
 ```
 
 ## Usage
